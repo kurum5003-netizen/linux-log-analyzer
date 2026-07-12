@@ -8,6 +8,10 @@ echo "Analyzing: $LOG_FILE"
 FAILED_LOGINS=$(grep -c  "Failed password" $LOG_FILE)
 SUCCESS_LOGINS=$(grep -c "Accepted password" $LOG_FILE)
 
+FAILED_IPS=$(awk '/Failed password/ {print $11}' $LOG_FILE)
+echo "Failed login IPs"
+echo "$FAILED_LOGINS"
+
 echo "Successful logins: $SUCCESS_LOGINS"
 echo "Failed logins attempts: $FAILED_LOGINS"
 
@@ -23,4 +27,6 @@ echo "Generated: $CURRENT_DATE" >> $REPORT_FILE
 echo "Log file: $LOG_FILE" >> $REPORT_FILE
 echo "Failed login attempts: $FAILED_LOGINS" >> $REPORT_FILE
 echo "Error count: $ERROR_COUNT" >> $REPORT_FILE
-
+echo "Succesful logins : $SUCCESS_LOGINS" >> $REPORT_FILE
+echo "Failed login IPs:" >> $REPORT_FILE
+echo "$FAILED_IPS" >> $REPORT_FILE

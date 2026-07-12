@@ -1,6 +1,10 @@
 Linux Log Analyzer Report
 ===================
-Generated: Paz 12 Tem 2026 20:14:50 +03
+Generated: Paz 12 Tem 2026 20:55:39 +03
 Log file: logs/sample.log
 Failed login attempts: 2
 Error count: 2
+Succesful logins : 2
+Failed login IPs:
+192.168.1.50
+192.168.1.60

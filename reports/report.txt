@@ -1,0 +1,6 @@
+Linux Log Analyzer Report
+===================
+Generated: Paz 12 Tem 2026 20:14:50 +03
+Log file: logs/sample.log
+Failed login attempts: 2
+Error count: 2

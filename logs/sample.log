@@ -1,0 +1,6 @@
+Jan 12 10:15:22 server sshd[1234]: Accepted password for ali from 192.168.1.10 port 54321
+Jan 12 10:16:03 server sshd[1235]: Failed password  for root from 192.168.1.50 port 54322
+Jan 12 10:17:11 server sshd[1236]: Failed password for admin from 192.168.1.60 port 54323
+Jan 12 10:18:45 server kernel: ERROR: Disk space low
+Jan 12 10:19:30 server sshd[1237]: Accepted password for mehmet from 192.168.1.20 port 54324
+Jan 12 10:20:12 server application: ERROR: Database connection failed   
